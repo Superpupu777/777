@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+    font-size: var(--fs-base);
+}
+
+:root {
+    --font-main: "Manrope", sans-serif;
+}
+
+
+
+.h1__nav {
+    color: #f1f1f1;
+    font-weight: 500;
+    /* тонкая жирность */
+    font-size: 50px;
+    line-height: 78%;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    /* Убираем линию */
+    color: #f1f1f1;
+    /* Меняем цвет текста */
+}
+
+.nav__nav {
+    background-color: rgb(162, 156, 156);
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.a__nav {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.main {
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top:70px ;
+}
+
+.h2__main {
+    color: #db9696;
+    font-weight: 400;
+    /* тонкая жирность */
+    font-size: 50px;
+    line-height: 78%;
+    margin-top: 20px;
+}
+
+.info__main{
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.soz {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
