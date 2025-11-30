@@ -2,88 +2,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-main);
-    font-size: var(--fs-base);
+    font-family: "Manrope", sans-serif;
 }
 
 :root {
     --font-main: "Manrope", sans-serif;
 }
 
-
-
-.h1__nav {
-    color: #f1f1f1;
-    font-weight: 500;
-    /* тонкая жирность */
-    font-size: 50px;
-    line-height: 78%;
-    margin-top: 20px;
+body {
+    background-color: #fff;
 }
 
-a {
-    text-decoration: none;
-    /* Убираем линию */
-    color: #f1f1f1;
-    /* Меняем цвет текста */
-}
+/* —————————— HEADER —————————— */
 
 .nav__nav {
     background-color: rgb(162, 156, 156);
     display: flex;
     height: 100px;
     justify-content: space-around;
-    gap: 20px;
+    align-items: center;
     width: 100%;
+}
 
+.h1__nav {
+    color: #f1f1f1;
+    font-weight: 500;
+    font-size: 50px;
 }
 
 .a__nav {
-    margin-top: 30px;
     display: flex;
     gap: 30px;
     font-size: 20px;
-
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-}
-
-.main {
-    max-width: 1500px;
-    margin: 0 auto;
-    margin-top:70px ;
-}
-
-.h2__main {
-    color: #db9696;
-    font-weight: 400;
-    /* тонкая жирность */
-    font-size: 50px;
-    line-height: 78%;
-    margin-top: 20px;
-}
-
-.info__main{
-    display: flex;
-    gap: 50px;
-    margin-top: 20px;
-}
-
-.soz {
-    display: flex;
-    gap: 30px;
-    margin-top: 40px;
+a {
+    text-decoration: none;
+    color: #f1f1f1;
 }
 
 .header {
     background: url(./photo_2025-05-25_10-25-54.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 1000px;
     width: 100%;
-    background-position: center;
 }
 
 .header__title {
@@ -92,42 +56,148 @@ body {
     text-align: center;
     color: #fff;
     margin-top: 100px;
-  
-} 
+}
 
-.gallary__title{
+/* —————————— MAIN —————————— */
+
+.main {
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.h2__main,
+.gallary__title {
     color: #db9696;
     font-weight: 400;
-    /* тонкая жирность */
     font-size: 50px;
-    line-height: 78%;
-    margin-top: 20px;
-    margin-bottom: 40px;
 }
 
-.img__gal{
-    border-radius: 20px;
-    width:380px ;
-    height: 250px;
-    
-}
-
-.gallery{
+.info__main {
     display: flex;
-    align-items: center;
-    
-    
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.img__gal {
+    border-radius: 20px;
+    width: 380px;
+    height: 250px;
+    margin-bottom: 20px;
 }
 
 .img__gall {
     border-radius: 20px;
-    width:760px ;
+    width: 760px;
     height: 500px;
     margin-left: 350px;
 }
 
-.img222 {
-    border-radius: 20px;
-    height: 730px;
-    width: 400px;
+/* —————————— 1) ПЛАНШЕТЫ (768–1024px) —————————— */
+
+@media (max-width: 1024px) and (min-width: 769px) {
+
+    .nav__nav {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .h1__nav {
+        font-size: 40px;
+    }
+
+    .a__nav {
+        font-size: 18px;
+        gap: 20px;
+    }
+
+    .header {
+        height: 700px;
+    }
+
+    .header__title {
+        font-size: 120px;
+    }
+
+    .info__main {
+        gap: 20px;
+        padding: 0 20px;
+        font-size: 24px;
+    }
+
+    .img__gal {
+        width: 45%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .img__gall {
+        width: 90%;
+        height: auto;
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    .h2__main,
+    .gallary__title {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+/* —————————— 2) ТЕЛЕФОНЫ (до 768px) —————————— */
+
+@media (max-width: 768px) {
+
+    .nav__nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 10px;
+    }
+
+    .h1__nav {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .a__nav {
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    .header {
+        height: 500px;
+    }
+
+    .header__title {
+        font-size: 70px;
+        margin-top: 100px;
+        padding: 0 10px;
+    }
+
+    .h2__main,
+    .gallary__title {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .info__main {
+        flex-direction: column;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .gallary img,
+    .img__gal {
+        width: 100%;
+        height: auto;
+        margin-left: 0 !important;
+    }
+
+    .img__gall {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
 }
