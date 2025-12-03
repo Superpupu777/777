@@ -14,7 +14,6 @@ body {
 }
 
 /* —————————— HEADER —————————— */
-
 .nav__nav {
     background-color: rgb(162, 156, 156);
     display: flex;
@@ -59,7 +58,6 @@ a {
 }
 
 /* —————————— MAIN —————————— */
-
 .main {
     max-width: 1500px;
     margin: 0 auto;
@@ -83,7 +81,6 @@ a {
     border-radius: 20px;
     width: 380px;
     height: 250px;
-    margin-bottom: 20px;
 }
 
 .img__gall {
@@ -93,10 +90,28 @@ a {
     margin-left: 350px;
 }
 
+.Classruk {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.cls {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.str {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 /* —————————— 1) ПЛАНШЕТЫ (768–1024px) —————————— */
-
 @media (max-width: 1024px) and (min-width: 769px) {
-
     .nav__nav {
         height: auto;
         padding: 15px 0;
@@ -146,9 +161,7 @@ a {
 }
 
 /* —————————— 2) ТЕЛЕФОНЫ (до 768px) —————————— */
-
 @media (max-width: 768px) {
-
     .nav__nav {
         flex-direction: column;
         height: auto;
